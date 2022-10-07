@@ -24,6 +24,8 @@ class Administrasi extends CI_Controller{
     
     //put your code here
     function index() {
-        
+        $username = $this->session_model->getUsername();
+        $this->load->view('administrasi/header', ['username' => $username]);
+        $this->load->view('administrasi/navbar', ['username' => $username]);
     }
 }

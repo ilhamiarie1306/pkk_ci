@@ -13,6 +13,15 @@
  */
 class Session_model extends CI_Model {
 
+    function getUsername(){
+        $res = null;
+        $userData = $this->session->userdata();
+        if (array_key_exists('username', $userData)){
+            $res = $userData['username'];
+        }
+        return $res;
+    }
+            
     function validate_session() {
         $result = false;
         $userData = $this->session->userdata();

@@ -1,0 +1,9 @@
+
+1. Log into github.com and in the top right click on user name and select Settings
+2. Scroll down and click on Developer Settings on the left sidebar menu
+3. On the left sidebar click on Personal Access Tokens
+4. Click on Generate New Access Token
+5. I made a note to know it was for netbeans
+6. Set the expiration you want, and make sure to grant access to all the repo items
+7. It will generate a token. Copy this token and be aware that you can't access this again but you can regenerate a new one.
+Back in Netbeans when trying to access git remote use the token you just copied instead of the password.
